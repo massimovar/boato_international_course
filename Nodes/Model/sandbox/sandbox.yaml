@@ -1,0 +1,10 @@
+Name: sandbox
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=d8d9cfdb13232490cffd3b7e44188a92
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
