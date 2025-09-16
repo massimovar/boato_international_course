@@ -412,12 +412,12 @@ Children:
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 1280.0
+    Value: 1920.0
   - Name: Height
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 800.0
+    Value: 1080.0
   - Name: Caption
     Type: BaseDataVariableType
     DataType: String
