@@ -1362,37 +1362,167 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-- Name: Screen3
+- Name: Motor
   Id: g=d6a39583a5479234e10679ca2cb0ab29
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
-  - Name: Label1
-    Type: Label
+  - Name: MotorWidget1
+    Type: MotorWidget
     Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
+    - Name: VerticalLayout1
+      Type: ColumnLayout
       Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../..@BrowseName"
-    - Name: FontSize
-      Type: BaseDataVariableType
+      - Name: Name
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}@BrowseName"
+      - Name: On
+        Type: Switch
+        Children:
+        - Name: Checked
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}/On"
+      - Name: Speed
+        Type: CircularGauge
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}/Speed"
+        - Name: MinValue
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: MaxValue
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 100.0
+        - Name: WarningZones
+          Type: BaseObjectType
+      - Name: Temp
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}/Temperature"
+    - Name: LeftMargin
+      Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 100.0
-    - Name: HorizontalAlignment
+      Value: 40.0
+    - Name: TopMargin
       Type: BaseVariableType
-      DataType: HorizontalAlignment
+      DataType: Size
       ModellingRule: Optional
-      Value: 2
-    - Name: VerticalAlignment
+      Value: 40.0
+    - Name: MotorInstance
+      Type: Alias
+      DataType: NodeId
+      Value: "/Objects/boato_international_course/Model/Motors/Motor1"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/boato_international_course/Model/MyTypes/MyMotor"
+  - Name: MotorWidget2
+    Type: MotorWidget
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Name
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}@BrowseName"
+      - Name: On
+        Type: Switch
+        Children:
+        - Name: Checked
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}/On"
+      - Name: Speed
+        Type: CircularGauge
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}/Speed"
+        - Name: MinValue
+          Type: BaseDataVariableType
+          DataType: Float
+        - Name: MaxValue
+          Type: BaseDataVariableType
+          DataType: Float
+          Value: 100.0
+        - Name: WarningZones
+          Type: BaseObjectType
+      - Name: Temp
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{MotorInstance}/Temperature"
+    - Name: MotorInstance
+      Type: Alias
+      DataType: NodeId
+      Value: "/Objects/boato_international_course/Model/Motors/Motor2"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/boato_international_course/Model/MyTypes/MyMotor"
+    - Name: LeftMargin
       Type: BaseVariableType
-      DataType: VerticalAlignment
+      DataType: Size
       ModellingRule: Optional
-      Value: 2
+      Value: 360.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
 - Name: Screen4
   Id: g=dd3940bcd083ca49497ae6189593d8fc
   Supertype: Screen

@@ -34,15 +34,15 @@ Project:
    Module: FTOptix.WebUI
    Version: 1.2
  Statistics:
-  TotalNodeCount: 696
-  Objects: 194
-  ObjectTypes: 6
-  Variables: 496
+  TotalNodeCount: 808
+  Objects: 221
+  ObjectTypes: 8
+  Variables: 579
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 6
   ReferenceTypes: 0
-  Files: 23
+  Files: 26
  Nodes:
  - File: Nodes/boato_international_course.yaml

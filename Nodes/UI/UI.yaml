@@ -793,7 +793,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Screen3"}
+            Value: {"LocaleId":"en-US","Text":"Motors"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -846,7 +846,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/boato_international_course/UI/Screens/Screen3"
+                    Value: "/Objects/boato_international_course/UI/Screens/Motor"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
@@ -1214,3 +1214,4 @@ Children:
       Value: "{Session}/IsWeb"
 - File: Screens/Screens.yaml
 - File: Keyboards/Keyboards.yaml
+- File: Widgets/Widgets.yaml

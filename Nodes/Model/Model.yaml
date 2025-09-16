@@ -2,3 +2,5 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - File: sandbox/sandbox.yaml
+- File: Motors/Motors.yaml
+- File: MyTypes/MyTypes.yaml

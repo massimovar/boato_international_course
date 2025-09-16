@@ -1,0 +1,74 @@
+Name: Motors
+Type: FolderType
+Children:
+- Name: Motor1
+  Id: g=b958de82a140bf9e11d4ab3b2eb91136
+  Type: MyMotor
+  Children:
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Motor2
+  Id: g=acf7137409bbcc82de737873f109a208
+  Type: MyMotor
+  Children:
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Motor3
+  Type: MyMotor
+  Children:
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: Motor4
+  Type: MyMotor
+  Children:
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: Motor5
+  Type: MyMotor
+  Children:
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32

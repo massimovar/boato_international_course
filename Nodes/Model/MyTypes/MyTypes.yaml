@@ -1,0 +1,16 @@
+Name: MyTypes
+Type: FolderType
+Children:
+- Name: MyMotor
+  Id: g=3b9a78c811f3109d09d81c15d153a3eb
+  Supertype: BaseObjectType
+  Children:
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Float
