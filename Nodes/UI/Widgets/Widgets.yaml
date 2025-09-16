@@ -16,16 +16,6 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
-  - Name: LeftMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 140.0
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 90.0
   - Name: BorderThickness
     Type: BaseDataVariableType
     DataType: Size
