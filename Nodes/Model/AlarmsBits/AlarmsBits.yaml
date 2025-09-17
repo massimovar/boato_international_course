@@ -2,6 +2,5 @@ Name: AlarmsBits
 Type: FolderType
 Children:
 - Name: Variable1
-  Id: g=f29d3b54b38eb894f1198b3b0b1fe2b3
   Type: BaseDataVariableType
   DataType: Int32
