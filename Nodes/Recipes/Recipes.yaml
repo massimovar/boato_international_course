@@ -1,2 +1,85 @@
 Name: Recipes
 Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=1fdaff3ffc5c95b262c246a10b1121b4
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Class: Reference
+    Target: ns=35;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=35;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/boato_international_course/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/boato_international_course/Model/RecipeTags"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EditModel
+    Id: g=1118d88bc0df23fe06e24be8ec82b7d3
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Variable2
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Variable3
+      Type: BaseDataVariableType
+      DataType: Boolean

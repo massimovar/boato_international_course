@@ -14,6 +14,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using UAManagedCore;
+using FTOptix.Recipe;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion

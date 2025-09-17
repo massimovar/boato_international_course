@@ -99,6 +99,36 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 10000
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=27;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+        - Name: /Variable1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /Variable2
+          Type: StoreColumn
+          DataType: String
+        - Name: /Variable3
+          Type: StoreColumn
+          DataType: Boolean
   - Class: Reference
     Target: ns=29;i=30
     Direction: Forward

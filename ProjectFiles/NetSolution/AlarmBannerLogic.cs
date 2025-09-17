@@ -4,6 +4,7 @@ using UAManagedCore;
 using System.Linq;
 using FTOptix.NetLogic;
 using FTOptix.EventLogger;
+using FTOptix.Recipe;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

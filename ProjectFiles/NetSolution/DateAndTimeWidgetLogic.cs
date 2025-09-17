@@ -13,6 +13,7 @@ using FTOptix.Store;
 using FTOptix.SQLiteStore;
 using FTOptix.Alarm;
 using FTOptix.EventLogger;
+using FTOptix.Recipe;
 #endregion
 
 public class DateAndTimeWidgetLogic : BaseNetLogic

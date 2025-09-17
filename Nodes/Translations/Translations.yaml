@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [28,2],
+    "Dimensions": [49,2],
     "Body": [
      "","en-US",
      "DateAndTime","Date and time",
@@ -38,6 +38,27 @@ Children:
      "Message","Message",
      "Acked","Acked",
      "Confirmed","Confirmed",
-     "Severity","Severity"
+     "Severity","Severity",
+     "RecipesEditorStoreOfSchema","Store of schema",
+     "Save","Save",
+     "Delete","Delete",
+     "Load","Load",
+     "Apply","Apply",
+     "RecipeControllerRecipe","Recipe",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty",
+     "RecipeControllerCreatedAndSaved","created and saved",
+     "RecipeControllerDeleted","deleted",
+     "RecipeControllerRecipeApplied","Recipe applied",
+     "RecipeControllerRecipeLoaded","Recipe loaded",
+     "RecipeControllerSaved","saved",
+     "RecipesEditorNotARecipe","is not a recipe",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set",
+     "RecipesEditorRecipeNotFound","Recipe not found",
+     "RecipesEditorNotAStore","is not a store",
+     "RecipesEditorNotSet","is not set",
+     "RecipesEditorStore","Store",
+     "RecipesEditorNotFound","not found",
+     "RecipesEditorEditModelOfSchema","EditModel of schema"
     ]
    }
