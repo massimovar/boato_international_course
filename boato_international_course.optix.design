@@ -23,6 +23,14 @@ Project:
    Uri: 'urn:FTOptix:CODESYSTagImporter'
    Module: FTOptix.CODESYSTagImporter
    Version: 1.0
+  7:
+   Uri: 'urn:FTOptix:CoreBase:Net'
+   Module: FTOptix.CoreBase.Net
+   Version: 2.0
+  8:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 4.0
  Statistics:
   TotalNodeCount: 4
   Objects: 1

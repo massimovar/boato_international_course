@@ -4,3 +4,7 @@ Children:
 - File: sandbox/sandbox.yaml
 - File: Motors/Motors.yaml
 - File: MyTypes/MyTypes.yaml
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- File: VariablesToLog/VariablesToLog.yaml

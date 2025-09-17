@@ -9,8 +9,21 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [14,2],
     "Body": [
-     "","en-US"
+     "","en-US",
+     "DateAndTime","Date and time",
+     "TimeSynchronizationMode","Synchronization mode",
+     "TimeZone","Time zone",
+     "AutoMode","Auto (Remote NTP server)",
+     "LocalNTPServerInterfaces","Local NTP server interfaces",
+     "Reboot","Reboot",
+     "LAN","LAN",
+     "WAN","WAN",
+     "RebootToCommitChanges","Reboot to commit changes",
+     "RemoteNTPServer","Remote NTP server",
+     "PLCaddress","PLC address",
+     "PLC","Auto (PLC)",
+     "ManualMode","Manual"
     ]
    }
