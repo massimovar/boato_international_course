@@ -47,6 +47,7 @@ Children:
         DataType: UInt32
         Value: 50000
     - Name: AlarmsEventLogger1
+      Id: g=3079dcdd16509bb41bc43aa8e8cb9ace
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -94,6 +95,10 @@ Children:
         - Name: 'Message_en-US'
           Type: StoreColumn
           DataType: String
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 10000
   - Class: Reference
     Target: ns=29;i=30
     Direction: Forward

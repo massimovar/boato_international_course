@@ -138,14 +138,14 @@ Project:
    Module: FTOptix.EventLogger.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 3076
-  Objects: 643
+  TotalNodeCount: 3499
+  Objects: 682
   ObjectTypes: 15
-  Variables: 2412
+  Variables: 2793
   VariableTypes: 0
   DataTypes: 0
-  Methods: 6
-  References: 96
+  Methods: 9
+  References: 415
   ReferenceTypes: 0
   Files: 36
  Nodes:

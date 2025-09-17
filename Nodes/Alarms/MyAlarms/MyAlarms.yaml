@@ -3,7 +3,7 @@ Id: g=6f31cf8cee619224d719cf8f808b4913
 Type: FolderType
 Children:
 - Name: BoatoAlarm1
-  Id: g=c506cda7b7c9e005957e5a63cb26267b
+  Id: g=1a1369f112e546b19acd0be89e7f7ac6
   Type: BoatoAlarm
   Children:
   - Class: Reference
@@ -40,49 +40,60 @@ Children:
     Target: ns=31;i=154
     Direction: Forward
   - Name: NormalStateValue
-    Id: g=b9b1b2b2312170ce8ee24ccf7ca1f7df
+    Id: g=d256225a29e5dbcf8cc6dad2f66e4def
     Type: BaseDataVariableType
     DataType: Double
   - Name: InputValue
-    Id: g=90660d85d473ee7b3b20737cab260639
+    Id: g=83b91803dbe7e2fb34ae42ccfc80ee67
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=def2af758350806c55efdd1892025014
+      Id: g=6e366102342f44f69d8b7a7a69f29e3a
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/AlarmsBits/Variable1.0"
-      Children:
-      - Name: Mode
-        Id: g=6f312174478db623a60909898e0c18d0
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.0"
   - Name: LastEvent
-    Id: g=68e7a94a3f7a1874a661e7c8f2448679
+    Id: g=ef1c3a92b09558d32e35b8613d65903b
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
     ArrayDimensions: [0]
-  - Name: email
-    Id: g=3b37d2bb80ebd74af8069e1d187ccc8e
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "ciccio.panza@ciao.it"
   - Name: Message
-    Id: g=1b9c9ba331aa9fc28b44fcccdd581ec5
+    Id: g=b76d95555dca01f448a80dcc02d409cf
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"not set"}
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm1"}
     Children:
     - Name: DynamicLink
-      Id: g=ba9deab816e8648f9137a1a03c8c1731
+      Id: g=a55c464a6940767e853e6ba99caf5cc9
       Type: DynamicLink
       DataType: NodePath
       Value: "..@BrowseName"
+  - Name: email
+    Id: g=c26b4600db5a31b653e4d5b5814ba2d4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=ac34d3e5c2ef93b2ff5887500fcd508e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=4241179d75ef9695a0833b02bd827f8f
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=6dc6f58adcf3ee70d0984bd3feb18110
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=5cfae4a9ed0de2fcdc76714b5631ea96
+    Type: BaseDataVariableType
+    DataType: Boolean
 - Name: BoatoAlarm2
-  Id: g=dc9f54fec386018e0e72adea75354142
+  Id: g=4d9206a66f724af0b595ae00e8f228f4
   Type: BoatoAlarm
   Children:
   - Class: Reference
@@ -119,49 +130,60 @@ Children:
     Target: ns=31;i=154
     Direction: Forward
   - Name: NormalStateValue
-    Id: g=f00c794f50f5e1abbdb22418dccdcc1e
+    Id: g=d95147a41445d50ae539b6811ebe278b
     Type: BaseDataVariableType
     DataType: Double
   - Name: InputValue
-    Id: g=a740142e756b978ed4f2e437d66698a4
+    Id: g=3c514ffae1aa6fd16fb26da0d24b5570
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=d181a743ad7bd173e621ecf50fb83ac2
+      Id: g=28dcdd599f91437487706b392a0b422b
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/AlarmsBits/Variable1.1"
-      Children:
-      - Name: Mode
-        Id: g=cce4474ced84f6f709b67d8b371e2ba3
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.1"
   - Name: LastEvent
-    Id: g=90e55d4c5b69ecddd8cf88c594513264
+    Id: g=95cc10a1bc52f9dc71de3eef1c4e5932
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
     ArrayDimensions: [0]
-  - Name: email
-    Id: g=772144b921a12296bb4a537266f40da9
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "ciccio.panza@ciao.it"
   - Name: Message
-    Id: g=0f2a34ad8479875c77c9ff39da2b81c4
+    Id: g=54f9c5918fd43713fa11d0358c42634e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"not set"}
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm2"}
     Children:
     - Name: DynamicLink
-      Id: g=03e1796debfd585b0a33ac29fc9ac9b7
+      Id: g=c593933b3a1ce70c6fb9cab9f6aaf9c5
       Type: DynamicLink
       DataType: NodePath
       Value: "..@BrowseName"
+  - Name: email
+    Id: g=6a8b00cb59c7108cfb436e6a30e87424
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=ec5a1b4e758dac998a9350f15344c023
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=f8cf7d007aa2814d5c52ce50ab0f090b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=c25a3d5681f72377c3a2ff3bc5c9d4ca
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=850b98a4d769db5b65787d55be4e84f8
+    Type: BaseDataVariableType
+    DataType: Boolean
 - Name: BoatoAlarm3
-  Id: g=0c21c454f6f62679270dc73c8c3c1902
+  Id: g=a81751b49fa54bbcbabbc234327bca89
   Type: BoatoAlarm
   Children:
   - Class: Reference
@@ -198,45 +220,2665 @@ Children:
     Target: ns=31;i=154
     Direction: Forward
   - Name: NormalStateValue
-    Id: g=9edfce732f0688bde434e07db818f580
+    Id: g=2b599bc2042720fb067cd869e2c9515a
     Type: BaseDataVariableType
     DataType: Double
   - Name: InputValue
-    Id: g=b319513d74f451930c5a26d74dac5832
+    Id: g=43996a489bb61f2a89ac5583a5bbbbff
     Type: BaseDataVariableType
     DataType: Double
-    Value: "NaN"
     Children:
     - Name: DynamicLink
-      Id: g=c4816bd6784a99564d4aa1cbdca095b1
+      Id: g=85ef7629d629487cb05a50a17218cd61
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/AlarmsBits/Variable1.2"
-      Children:
-      - Name: Mode
-        Id: g=e085f4ef4b6a210658e1bc8e36806c66
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.2"
   - Name: LastEvent
-    Id: g=f39a7361659a6f12c8ad95c01dd9a41c
+    Id: g=0c65ca9b56d2bbe8e1fea4007882717a
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
     ArrayDimensions: [0]
-  - Name: email
-    Id: g=0a763bffcc2d60ec417e410a7ea34a84
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "ciccio.panza@ciao.it"
   - Name: Message
-    Id: g=19023e40dd240409d6303be12bb3af3f
+    Id: g=77f15790cdf81e55e3823472350ef254
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"not set"}
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm3"}
     Children:
     - Name: DynamicLink
-      Id: g=dbc6ea1bb93e5b3d107ea54eb29c5e63
+      Id: g=64a390871533bf361a9eed9a15625dd2
       Type: DynamicLink
       DataType: NodePath
       Value: "..@BrowseName"
+  - Name: email
+    Id: g=86dfb6de52ee887d7ab7347ff04f8e39
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=a71152257414b1c16b922093a7d6b460
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=8bb68c2815cb18a4740091f77a692d87
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=0d30eafb9c6d4bef4aa673672c4439a6
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=96f722ac27b94d9dda09484950d5dbf0
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm4
+  Id: g=8fec67009b7b4491a006c799890cfa7d
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=72edc5f0d2d4203ae9c5a7bf645f853f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=3951b37adedacb40f58f618d457dce28
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=aa64e045be00458592776f6928fe6f4b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.3"
+  - Name: LastEvent
+    Id: g=efcf389d4b98b89cfe3e75f28b6230cd
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=acbfd39d4a6650d8761aca8bf5cff57e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm4"}
+    Children:
+    - Name: DynamicLink
+      Id: g=da84909f9bd0a6ce0a770856136d1712
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=88699391a80a564a00f679e3c9d88c05
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=d290d1cce050cb111d6b5ab623bd716c
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=56859f69e625110150255bd971f6d27c
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=3452fcdd9ba9aacfd0c521951b51e362
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=48c986411279f5fb9ec727eb76112f39
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm5
+  Id: g=b8709a7ac1864a19a09b4630518079fe
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=73bb2d19258c4c6707227adbbab793b3
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=0c1ae306fed4a8750e096775b1292af0
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2e4e94d59daa406c9fb8813afd633289
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.4"
+  - Name: LastEvent
+    Id: g=a530e84a9229b3c804216e0bff332ec6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=ab4a94cce37481fbb594b9e7e8b68205
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm5"}
+    Children:
+    - Name: DynamicLink
+      Id: g=6f5f0797ec2754693725702db57b171a
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=a558b13be8480a8ba498f4cc0a8925bc
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=d07b7e906bc5f047618dcd1d9eccf380
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=f93e8e23bc2ec276528323e29523bdae
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=55e5c206c3838d44d791af662505eeea
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=15488f119c33c732d8d53fa6f6e637a8
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm6
+  Id: g=a68232a41a1049c698d83e12329d5c70
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=a6d1ae48eb66661fa8d890987faf7463
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a2063304d87eec058e6c2a7358fc0060
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=16e89b4267ad496aac53d2f69abf4993
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.5"
+  - Name: LastEvent
+    Id: g=d016059234030b0faf2cd78b42aeef97
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=a6f52f4781d4cd7e0b6e5096c7006945
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm6"}
+    Children:
+    - Name: DynamicLink
+      Id: g=0ec1d4fddafbcc5a8dd9c7dc3e147ad2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=067f24ee54d6b84501185887bac8de57
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=4c83d2d7465e97c7b05d5b8ec3030a59
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=146dfa2ff6b638e644b1a1c4133070df
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=1e2e0c58ed62a6dcaaad73d7f1436195
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=168a3d64a9f609d93b79ca2dc60c8181
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm7
+  Id: g=9d6ac9e55f6e47dfb92464790b357d3f
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=9ffc8568e1488d264bd9dd05b4149e75
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=18d999440c6debfdb27bb7e43b166558
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=331b123cec354297a90c1cf723b56455
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.6"
+  - Name: LastEvent
+    Id: g=dc8608b2f035d1b23966cdba55422a48
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=b3a95fd35cb990b65c2eb2446a35e1b8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm7"}
+    Children:
+    - Name: DynamicLink
+      Id: g=b1fb390c500d4e7ae9e20ba37480d5a7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=259d848ff264981c5e9400e257aa8551
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=090ebeb9d13acc044a5f2b8da2ff35ad
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=0fb6a16104a1ad8dd410f63449f65cb9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=deb45518c27b9bf50a2d7b82bc9338ae
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=cb892af74e9a2c042bf361924bece980
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm8
+  Id: g=19ebf9298a104fd881643e63056ac5a2
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=0f72bd59031d7d71369398ea56436b99
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=1f316dbf2abb19ef8306dcf358b95062
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8a82481028a64bcbabb0de40bca13d00
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.7"
+  - Name: LastEvent
+    Id: g=e303c6772e983fbd2278cbae91b761a9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=3316d76cab279be2b3748cde2f34b780
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm8"}
+    Children:
+    - Name: DynamicLink
+      Id: g=6de2eb2d5d2e9f4ab5ba5f8f1e1df9bc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=b58dbc4fc0750eced8c68302eda68664
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=8e96bc7ef40732b581339e33afbd3ae0
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=ead98fd9c22caede5238817233a3fc4f
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=295ebdf0080f54cc5363c576f4b366a3
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=d636a689ae6012c9bd9ae163d0f992ce
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm9
+  Id: g=af8917f7a9614a42ba8a6823613b15a3
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=abc9c85261c866c9beb9cd7fff1c61ec
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=59d2aa2e47fd0edf7af1398096406ab4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=85669c37f95a449799701cbc9a1e5f51
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.8"
+  - Name: LastEvent
+    Id: g=dfa58b81b320a4136c25dd11d7602c35
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=7a87185582b87c02f31606b8f53d3c3e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm9"}
+    Children:
+    - Name: DynamicLink
+      Id: g=372440a3e078192e0821c716fa33c941
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=981990fd4583c3f5428cc1512f6cee82
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=f95cda9bc65ba44c6db8796ad991e2d4
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=6a4ddfe448ffc054941d60062c811666
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=090a9afc376b63c50c3fb9fec380675e
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=fbbf066df34da42469bfe31649e9afca
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm10
+  Id: g=14f0f895b029467b8eea4b34770f7b50
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=5fdcae93794abf3211253e3edb2ea9e1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=de8e9ab3f66b9634bdded8574cd2e8fa
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=dcd31eed2b0b4aeea2f59ef316141bc4
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.9"
+  - Name: LastEvent
+    Id: g=c5d07e37a763ce96793b88b278ed1e83
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=fb6fc9b78d123eaccd8983e94f8ab7db
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm10"}
+    Children:
+    - Name: DynamicLink
+      Id: g=bd60c19e5afe75f9c4f786423debac65
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=99f61b6680ec2be098d8b8bcc2d889a0
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=c635b12e846e51bca453dc9c389064d4
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=6c092fe242c1b2c9fab227dee6c54db4
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=ec89ffdb95fdb488e27035b1016557ef
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=db96de1212479ce73861d65b7e54874c
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm11
+  Id: g=76d538cac2f4448388364e3ed5e9f2be
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=8c7984c18740c6dba4d050a827ac7315
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9302a4410d90f74a9a88f71188b1a54c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=0f34dc7e28ae45d18028006acb5e70d1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.10"
+  - Name: LastEvent
+    Id: g=47cf6b7593fe2d5810474719942a8d22
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=08ffacab10cffd2bbc39cbb5026de15a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm11"}
+    Children:
+    - Name: DynamicLink
+      Id: g=1fba72a023fe7f15388ed9474c2f4e43
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=f09306dacd8873364c462fa6dddc848d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=4c6ff4856f70dbeda0e3b919739b98a4
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=a2ed7e2e2a1afc74fa5504dfba3ec1cd
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=3b8195db962f6235d33aaa287ee4232b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=39b5a2c24ac0b08c1c47960f7e92d142
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm12
+  Id: g=2ef4c7bb3bbd408fbdccc03c575a0cb0
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=bb96fb639f655074ad9bc9d91b0ebc34
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=99051fec593bc319cbc2c4a56cea4249
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=12a8b7b39e2a425a8dd08079c37de5d3
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.11"
+  - Name: LastEvent
+    Id: g=7bf733569cc57c2c335731f1cb4f1d9d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=cca3e5558227ea6b122d4cfcf6959e82
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm12"}
+    Children:
+    - Name: DynamicLink
+      Id: g=0d9985d3684d3718c77d3f622037a6a6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=6dd6cfde366779d7f5210eda61c8c975
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=d1c1b028843adc66d28bf7f3002ab648
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=e7bf5d63fa97c07ffa1ed3a2be31ca2e
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=6de3c14c08f78fa9c0e99a9d9eb32f41
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=67a1d87b7ee92f8e2b576e938b2f10ad
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm13
+  Id: g=1e3f2e2143bc4bc4954badf234596a4d
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=eb3a173436c935351adb9f57a75baacc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=afc4641e6b9c1bb93977168de962cb11
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c1127c27d1d245d5ba1be076a67696bd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.12"
+  - Name: LastEvent
+    Id: g=b2972c0f4e0aca16aa647cdd9ad129a1
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=6aa120717fedc745598435e5bc588536
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm13"}
+    Children:
+    - Name: DynamicLink
+      Id: g=468ddfe9dc9822eee1254e905858d3f1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=b80c4030b25781d47d0e62658c96438a
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=f19916caca7b691181019d962931fead
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=73094afc972b2058ed22ea4e75aa6528
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=d19de5269f56ae8dbe4909726bb9321b
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=8ebd2cde6a9a1245ab527b4a6fef37fc
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm14
+  Id: g=c3c30a9448c14882877ea58ba4432cd2
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=f22f49c1a005441cd5db451e004b8acf
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=676f88e303ab2924efdb2b3e1fa3d29e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=22adb135bdd646b1af996eac386be220
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.13"
+  - Name: LastEvent
+    Id: g=b6bc58f3a2f67265438a3afe43d813cd
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=674d666864058da5e59842ff6f53c939
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm14"}
+    Children:
+    - Name: DynamicLink
+      Id: g=85a4624fa3663dd48ad194633d5f3a0c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=79d20ae4caf55ed5f282d08642eb6c6b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=babb5a6c5dd9278cfc7d0433bdfa0343
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=dc9726c58079f52e17dc5dcb390ceed3
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=1aed2840c332bb651bbbdf1d831fab17
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=ee410e0058cce36a778c1627e9104e77
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm15
+  Id: g=2e933fa5ace64ec4be5daa26633be4b4
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=020bc155b74c4ff87cbf308a552c5116
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ee36c74bbfbdfb1f86aa5992c6d7b36a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=642013ffb555437eb6667637585f7179
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.14"
+  - Name: LastEvent
+    Id: g=ce135b8c713f570d9c4a574c5705dde4
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=ff3806b3e0701482f0a46b8bb7f04e8d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm15"}
+    Children:
+    - Name: DynamicLink
+      Id: g=7cee98d1ebe4ab8c6ca4cfd1b20fcadc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=4f24ddb2ebfebe5c7fe5dd2ef0bafb65
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=ddf4d7399dda8d618e56ef0a6c620e2b
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=2a3c60e111d0c0afbc9a9ea9a3a89936
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=d129335bee51c726bec42e403c79edcf
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=e74f28952771541f29b79241d7a9d73e
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm16
+  Id: g=d5507afc17734ac8add815e2f87a904a
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=79c04ba43c5c7edd6d02a9158972d0ef
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5bda249fbadd0cc1269641232e2022b1
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6e2cb2cb0aa84bd0ad7e9d0aedc16563
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.15"
+  - Name: LastEvent
+    Id: g=b98f5c5eb8e274f2c0065228299f9983
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=f14607eee43788c605e0fdf02fef5020
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm16"}
+    Children:
+    - Name: DynamicLink
+      Id: g=cf04787c200b057481a86e22b28671ef
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=ffe3bfce001587d81b10d75fb3863d88
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=2db401f1ef9c3258cf51334f833c97cd
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=c6b7510dc60d7ad1d9c2bf83ecb9c938
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=8482ae28378c1efcde55a54b2d0c714f
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=c9817108487b851ba2dc065c54e22ca1
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm17
+  Id: g=076c8136856b4783aa69e7209c1df8ae
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=6a70aa23cbe9c1f985b9af0ad8edd052
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=abc58d4342eaa67777a9028d230fe509
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7b74113ecb4f446ba73997abf82a9b89
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.16"
+  - Name: LastEvent
+    Id: g=5baaa1882202510248f5f1f19be2e307
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=da32d059bcb8fe4111bdfd7071018c41
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm17"}
+    Children:
+    - Name: DynamicLink
+      Id: g=d00b10e733d00d7d5bc82e988f1d5da7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=8375a190ffb578e1b74363cfaa47c76f
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=9a5bb256ffc3f08c320dd35fbffadb81
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=a38dde2c7e25b43839b102aa8307aa0c
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=7f649d1e44c0cf08105080ef10f0dc00
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=8ac1cfe94ce9fc992f1f553feaef9d63
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm18
+  Id: g=d37e0b3560374c98b24c3efa25252e8c
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=3329bef04076547db1429e419bd413cd
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=e1fd7c3e28f24dd4db3289b9d4feb0e9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b566cf706dd34930b27d09f7c60b08b0
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.17"
+  - Name: LastEvent
+    Id: g=cf56edcbb9bb59cff1acbcec9c3b392c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=88019dc0b0a5a3051db25916f105e02d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm18"}
+    Children:
+    - Name: DynamicLink
+      Id: g=01b3c741b22de09a2b3bec25dd110b1f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=f4f1c2b7288d4e9407492d0c93fb822b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=df44851d5885b449f81494d99bde871e
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=4befb443df30b990a4058b44d32b48eb
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=a0e633604f89c90c6a0a0a630d343d67
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=808d746f758c66e3a8fad04cdf062517
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm19
+  Id: g=4b1ad580de354206a236e0f20d60f56e
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=ba9f5f79107ebc4f0c3556649e6c13b7
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9c72c6c6d75163af8e88ab959505a693
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=a63e64296c3546b49597ce5fc76f6910
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.18"
+  - Name: LastEvent
+    Id: g=aaf6e272c388db7f0ae125a100600392
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=3bbc7a012733438a705b9b063b9f28a4
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm19"}
+    Children:
+    - Name: DynamicLink
+      Id: g=c58b64fdff06d7bfbecc93b90ea97693
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=fafba2ac79ea0aa56913ab4fa87a68b4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=3642b5e727876154fc29f567b62414b6
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=35e73bbdcc34abad24bc535186037584
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=c530d4927c60c685c117c4c2400522f3
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=0698efafc794873088b4582c11207119
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm20
+  Id: g=e42ab9e2e5ab4bfc88e379b1a13ad8d8
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=819ae82ba1c0c15296f4bab2fbe2bc3a
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ba585c3902733e0bc6de536fcc83ccfb
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=eae912196a464e379507ef85f26ad4be
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.19"
+  - Name: LastEvent
+    Id: g=68eeee3c18d3d3a166e2a2aa720b2c13
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=9f75d1ac8c211c48d27e9c75c1abc9ae
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm20"}
+    Children:
+    - Name: DynamicLink
+      Id: g=5fcee45ff725dafd8f1421d1a1c7e56c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=b354e81902ea7ef8c3fd6ba86429d90c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=4106b18254a0029fae50a3e5e7620e5c
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=204acb6031d1db40138dfe74b7db7a29
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=256de6a6e243627da553490430102ade
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=de533c3cd6c84e3ea9587fa17f2edaad
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm21
+  Id: g=1314c57f7f994424aa2e81e885099af7
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=5e204a3deadef8b79a14d632b75e27fb
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2959f0d2f866d61ba898049b76f3ce1e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=767bd5d748e746b1bed1733018e6cc47
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.20"
+  - Name: LastEvent
+    Id: g=ae030979e1b75c57e6af879245dff1e3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=8332a139de116acff3a48095cc955ef6
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm21"}
+    Children:
+    - Name: DynamicLink
+      Id: g=604b5cda23d39925b4e1dd2b4b8311b3
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=18bd370ce199cebb46cb464150444668
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=014b361d7e1502a0890c222d1664c342
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=45ddeff62173b1a31e380a3363829774
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=cd8b3421eb16e0e3e65687c1180c03cf
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=92a021187d2404bf209200ad17b30881
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm22
+  Id: g=3bd799655936444eadc8e4dd470b7ade
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=9c1e258c83fccf01a201c1b4c919e38c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6195e0a82d2a749b1ac82743508d43d3
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8a18fe59297c4a36bf46ff8db9cb29f2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.21"
+  - Name: LastEvent
+    Id: g=1069aec90afff6b825934db6b22f4dcb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=a8771a1e34fcf741737b47e702187761
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm22"}
+    Children:
+    - Name: DynamicLink
+      Id: g=4d4e8cc02f88ae30f3e778a1172f171c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=2457ec1a01806182496602ee55f81f12
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=0d4530f29db64271477e7346ad946d5c
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=cfb76c328e9d4d38d0d8a79527efc91c
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=b9336a1347624ce273bb8e42fe74e857
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=c11ab4f64a16adab5742ecf9329e0c45
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm23
+  Id: g=5ac9c0da6e574ea9b0e6f0c6f4b02659
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=d5530b1adcf8e6589a5c15d048267cdc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=cd619f4a3e1bc9bdec908509db41fe70
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8eb822127dd04434a561a65bf29c59fd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.22"
+  - Name: LastEvent
+    Id: g=15c8b20c649068e11a9ec9705b40a61f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=7433863496f438814e41126b5a3e5f77
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm23"}
+    Children:
+    - Name: DynamicLink
+      Id: g=f8a871c9f5e3b0468c32f24388b863f4
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=af17155fd3e400e422b9370c476d61e0
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=c797839f705b56bf0373f67782c3b60f
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=2cf12a9d1270dbef81f964f6e8932072
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=5c4639f9eb1d36c1ba3a7e461db07cf7
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=2e726428bd8a8951710788c33e0086ff
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm24
+  Id: g=28004ea3d10247d19e87a5081b641f8b
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=6f9295551dbaaff321988676922513b0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=cec54217aa3fd1d4402f2cc4c86efea5
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=54357246e73646cabf146df054885df9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.23"
+  - Name: LastEvent
+    Id: g=7d61db12870fcfb5669a75b7df48f915
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=338336832038ccf4097d2b3cd33d3d8e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm24"}
+    Children:
+    - Name: DynamicLink
+      Id: g=4aa7d48649221b293ed1be32b388983f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=3bf86bd23233dfa0da92f0b03d677a57
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=faab1d97e7ef4d072b44dbd858b3b795
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=0d066beb348fcc1548932eb34ab60609
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=f8c703a4d7b3c5e30a63f72d7c33c7e0
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=f18c24dea69b1165a55ad8bcd3b37a84
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm25
+  Id: g=eb54a09793814b10aa276e7b299ce049
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=dbb9d4122fa36f6b97b71414dfe16a96
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=94cc56d9e2a1c17ff078889fe99ddb25
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=be6149ec345d4ff8ab2df9f596c12c38
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.24"
+  - Name: LastEvent
+    Id: g=8e644b7e8345d3f014390926e647698f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=eb001970235fb6f63e57e183731e5da9
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm25"}
+    Children:
+    - Name: DynamicLink
+      Id: g=b225cc90e75e700e9496ada10c285722
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=287789ebbf0ecd5313c24b3a4dcd2038
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=cd54e17b476d958985934cbecb5d26b8
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=76b9544675c5840eeb04b3a9f4a87dcd
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=9295c21dee09a95b0762d036b68301b8
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=355a26f1e3efc456fd2af336461ff68d
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm26
+  Id: g=dc0b2439f14e4c0d9ebfdbf6078ed4cc
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=5e73457a57d258efa70b74c453743a35
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=bf3e2b1bbd48a32185709389f8765518
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b6a9def8b4b04433951408c135888ae0
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.25"
+  - Name: LastEvent
+    Id: g=29a5a352d207e92cb9e133de9e3e76a1
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=29df0b779d31dfed9ee998ff6a6e3a33
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm26"}
+    Children:
+    - Name: DynamicLink
+      Id: g=740527470eb510b24cea77f536d0e789
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=5fc60222ca0fdf3111730ccbfd67eb12
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=3ac9fed85c16dee3ddc263e447cd2dc8
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=d07042792e39e820dd65a53b9add92e7
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=ebd158e39d3269e62fd84c9b82e5a0c0
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=3fea7c985076fedd0595385aae6ae312
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm27
+  Id: g=8c56f10ba4f344338cfa6c945499f204
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=b0d708aa60c44a125588274129d54600
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a6cbf2b2d8829bfa32db56fec180427f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=cdd2b1254ee84d188c6f95c96ab08219
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.26"
+  - Name: LastEvent
+    Id: g=7d52ebe8af21c4364c984df4f9217d39
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=4c4bbbf5bc88bff3fd4d75d0202bbd22
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm27"}
+    Children:
+    - Name: DynamicLink
+      Id: g=d99211e02fab27da20bb0a75bf650c96
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=583c2fc555721cb14313c961039c204c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=d8ee12d5794b98acf06f84929f216b30
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=d7f3d270c31ea213f66f183e0342bb12
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=92ecf1e4599b2f00526d9320bee3f1af
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=5b224c312195a645c67033e25d931906
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm28
+  Id: g=23669451ac1f4057b06bd682e18ad410
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=e6e5c10903baec76179a737b0028a921
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=58f1aac9bbe7ad5cf18c02a9fe7f8563
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c3f5b5289fb543d48f8a1fde7b1721c2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.27"
+  - Name: LastEvent
+    Id: g=e3f291aaedf7fbb5cdd4b155b51d404d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=c5b9678757fedd23facd3699562159bf
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm28"}
+    Children:
+    - Name: DynamicLink
+      Id: g=a086b16ae197dfb58218a46ae89b42a7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=2088229375381b8382921e64da2c183d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=1505b0ddf614350b509c4a1e20234376
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=e4930476ed1a34471acf6ba705d7f5a1
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=049a913ebf85054c16fb417b41cb1ec5
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=f520a96fe675d888c1ec976dd19c6cc6
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm29
+  Id: g=16f0a08b32b8459196e864ea201eddcc
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=b596d82b45910c1facc41b41a44a7547
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=23dd0aee234fe4b071325f2106c20194
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=06b8caca88474a369d65e94de77086d3
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.28"
+  - Name: LastEvent
+    Id: g=315c2b7dc9db7f432dce64ddbe99a893
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=947049ea936d1e91f29e8fbab3cb6926
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm29"}
+    Children:
+    - Name: DynamicLink
+      Id: g=adc437d983d66c3d05090e64bf4d7e00
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=78a650413a86140e13367ca9ed3f8c1d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=9f3ab6fe37d713b89d5dfe911cbeb67f
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=bb715cb62718ce8e658cad0ee6fee0ca
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=93f875d3d92024fc47e7fa59dcecad6c
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=990ea4dd830696ed8c04275937861beb
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm30
+  Id: g=0236bef39da2425bb16e5285e66b4381
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=f7c7dd8e500895358fdbc22e3b544647
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=953e6e24a54739463193ae26756ea509
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=76ebe470d0eb4d06b2a63a8de37379ba
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.29"
+  - Name: LastEvent
+    Id: g=54b9e7e4b2b23309ccc404ec8921c78c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=458985cc118f7214abcd5f2aa9d74838
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm30"}
+    Children:
+    - Name: DynamicLink
+      Id: g=f979fcbd8d51c762abc2618a8d4d6131
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=a95bc22faf9f02df9994b241ec0a1290
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=82b0365f7046c0ea4e605e0377988be9
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=0bc643f90629b261f4df5276ffcbdc03
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=1766f3a30d3cfaa56fe0951bc924b7ff
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=ff5d66564c870f607fd600cbf76be218
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm31
+  Id: g=6c9a7517fc104c34b2fb38388a11e0b8
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=fc34e9e0afb0459fda497c30efcc6cd8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=26611985896ea3cc837eb3aa719bc601
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=507e1886c6b84b8e8f92a78780e09ec7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.30"
+  - Name: LastEvent
+    Id: g=980565caa878dd3a0fa7baa391c3fb8e
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=7d878ad8fda5d03d90a5b8a0d97fb671
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm31"}
+    Children:
+    - Name: DynamicLink
+      Id: g=2b3b73ee0815fb323c420f4d385c5aa5
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=7a7030a30c5067c65c7e6992628b3680
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=6d4ad486ba4fc8081a8bd0b27884e5ef
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=86bb0ffa8f571a96d8f5ca2fc908ef24
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=56c7547873057921fc96e913406e008e
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=841ca1bba63f851943df4c6a1e06f16c
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: BoatoAlarm32
+  Id: g=fb4dca66e5614420b0e4ad405836d3d4
+  Type: BoatoAlarm
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=0493f32a871d3b3a6d5c8089e9270fce
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=caaa7b122045ae8434838d4879ab8f3d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e68ed852dae340d0b022c0d111c54e96
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/boato_international_course/Model/AlarmsBits/Variable1.31"
+  - Name: LastEvent
+    Id: g=fa12335373d5c58893a2f1dcd73d1c65
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Message
+    Id: g=12071965291f21b999a2c515530d2ca2
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Alarms/MyAlarms/BoatoAlarm32"}
+    Children:
+    - Name: DynamicLink
+      Id: g=ee6a38ded5677d14f1d2e92818f74e51
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: email
+    Id: g=869f12c0740fa22e17e03bbe95e24804
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: Severity
+    Id: g=36d593c84fcda41a9d57986c3e5502b8
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: MaxTimeShelved
+    Id: g=ad1cd9ec59ac74e840f101330e698b16
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=beae0156780377d98da126f0c5ea1105
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=a12f8ed6e1bea1d9a75c637acbc9f5f3
+    Type: BaseDataVariableType
+    DataType: Boolean
