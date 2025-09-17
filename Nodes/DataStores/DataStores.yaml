@@ -9,6 +9,7 @@ Children:
     Type: BaseObjectType
     Children:
     - Name: DataLogger1
+      Id: g=2b40a819f63446257921543ae0a47d25
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -41,6 +42,10 @@ Children:
         - Name: Variable3
           Type: StoreColumn
           DataType: Int32
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 50000
   - Class: Reference
     Target: ns=29;i=30
     Direction: Forward

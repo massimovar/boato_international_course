@@ -47,6 +47,10 @@ Children:
     Value: 8
 - Name: AlarmConfiguration
   Type: PropertyGroup
+  Children:
+  - Name: AlarmsCollectionEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
 - File: UI/UI.yaml
 - File: Model/Model.yaml
 - File: Converters/Converters.yaml
