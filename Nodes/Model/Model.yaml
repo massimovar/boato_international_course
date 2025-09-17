@@ -8,3 +8,4 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - File: VariablesToLog/VariablesToLog.yaml
+- File: AlarmsBits/AlarmsBits.yaml

@@ -121,16 +121,32 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  31:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.0
+  32:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  33:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  34:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 2272
-  Objects: 495
-  ObjectTypes: 11
-  Variables: 1762
+  TotalNodeCount: 3076
+  Objects: 643
+  ObjectTypes: 15
+  Variables: 2412
   VariableTypes: 0
   DataTypes: 0
-  Methods: 4
-  References: 39
+  Methods: 6
+  References: 96
   ReferenceTypes: 0
-  Files: 32
+  Files: 36
  Nodes:
  - File: Nodes/boato_international_course.yaml

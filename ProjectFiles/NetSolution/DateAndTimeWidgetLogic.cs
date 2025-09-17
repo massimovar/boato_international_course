@@ -11,6 +11,8 @@ using FTOptix.SerialPort;
 using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
 #endregion
 
 public class DateAndTimeWidgetLogic : BaseNetLogic

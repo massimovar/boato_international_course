@@ -1,3 +1,112 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: BoatoAlarm
+  Id: g=07d0eeb834c0e94914c540d6c85feeb6
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=31;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=f2bec358aacf57f5e55797f958d5d6ee
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=bf0ebef2c0c6621b39f1a2fa999694b7
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=1f55dd9194cbec492d2dfa0b760fd182
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: AutoAcknowledge
+    Id: g=981a8ef4b240aa9e85b07cb2b5b297b3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: AutoConfirm
+    Id: g=d10f2fe5112cbefc9f37a4866040c823
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Message
+    Id: g=8316af169bc63ec8b33480aaabd25f88
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"not set"}
+    Children:
+    - Name: DynamicLink
+      Id: g=97479d2dffe669c7813683afbf1b1267
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: IsPull
+        Id: g=4faacfd90e0f16d3602297f079136761
+        Type: BaseVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=3ff677f4affbfa7b8527613c843c303f
+  - Name: email
+    Id: g=1eeb353f44b4f5617f607ca89b4a0863
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ciccio.panza@ciao.it"
+  - Name: ns=4;LibraryReference
+    Id: g=b0f22f55f9d3597c6cba1669572d66ed
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    ModellingRule: None
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "8ea1502378c4cf07e7542570d9a7a082",
+       "objectGuid": "0321687e7020c2907eff67642989aa7e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- File: MyAlarms/MyAlarms.yaml

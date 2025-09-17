@@ -70,3 +70,34 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: AlarmNotificationLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: AlarmCount
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: LastAlarm
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "df11bd104ff09de7f31867e99d8d1bc3",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

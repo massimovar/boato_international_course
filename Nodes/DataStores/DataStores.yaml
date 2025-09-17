@@ -46,6 +46,54 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 50000
+    - Name: AlarmsEventLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=27;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
   - Class: Reference
     Target: ns=29;i=30
     Direction: Forward

@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [14,2],
+    "Dimensions": [28,2],
     "Body": [
      "","en-US",
      "DateAndTime","Date and time",
@@ -24,6 +24,20 @@ Children:
      "RemoteNTPServer","Remote NTP server",
      "PLCaddress","PLC address",
      "PLC","Auto (PLC)",
-     "ManualMode","Manual"
+     "ManualMode","Manual",
+     "Timestamp","Timestamp",
+     "TimedShelve","Timed Shelve",
+     "Acknowledge","Acknowledge",
+     "Acknowledge All","Acknowledge All",
+     "Active","Active",
+     "Confirm","Confirm",
+     "OneShotShelve","One-Shot Shelve",
+     "Confirm All","Confirm All",
+     "Name","Name",
+     "SourceName","Source Variable",
+     "Message","Message",
+     "Acked","Acked",
+     "Confirmed","Confirmed",
+     "Severity","Severity"
     ]
    }
