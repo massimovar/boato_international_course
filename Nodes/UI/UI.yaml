@@ -1973,7 +1973,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/boato_international_course/UI/Screens/Alarms@BrowseName"
+                      Value: "/Objects/boato_international_course/UI/Screens/Recipes@BrowseName"
               - Name: TrueValue
                 Type: BaseDataVariableType
                 DataType: Color
