@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [71,2],
+    "Dimensions": [86,2],
     "Body": [
      "","en-US",
      "DateAndTime","Date and time",
@@ -81,6 +81,21 @@ Children:
      "ChangePasswordFormPasswordMismatchMessage","Passwords do not match",
      "LoginFormLoginSuccessful","Login successful",
      "LoginFormAuthenticationFailed","Authentication failed",
-     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user"
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user",
+     "Create","Create",
+     "Groups","Groups",
+     "EmptyUserList","No users in list",
+     "PasswordChangedTooRecently","Password changed too recently",
+     "Roles","Roles",
+     "Cancel","Cancel",
+     "Locale:","Locale:",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username",
+     "UnableToGetUsers","Unable to get users",
+     "UsernameAlreadyExists","Username already exists",
+     "UserNotFound","User not found",
+     "PasswordAlreadyUsed","Password already used in the past",
+     "PasswordTooShort","Password too short",
+     "UnsupportedOperation","Unsupported operation",
+     "ChangesAppliedSuccessfully","Changes applied successfully"
     ]
    }

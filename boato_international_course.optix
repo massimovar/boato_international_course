@@ -146,15 +146,15 @@ Project:
    Module: FTOptix.Recipe.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 4734
-  Objects: 922
-  ObjectTypes: 23
-  Variables: 3766
+  TotalNodeCount: 5666
+  Objects: 1085
+  ObjectTypes: 32
+  Variables: 4522
   VariableTypes: 0
   DataTypes: 0
-  Methods: 23
-  References: 444
+  Methods: 27
+  References: 458
   ReferenceTypes: 0
-  Files: 39
+  Files: 40
  Nodes:
  - File: Nodes/boato_international_course.yaml
