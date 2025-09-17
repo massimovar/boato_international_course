@@ -421,3 +421,4 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/boato_international_course/Model/MyTypes/MyMotor"
+- File: LoginForm/LoginForm.yaml

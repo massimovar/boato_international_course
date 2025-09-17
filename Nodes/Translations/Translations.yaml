@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [49,2],
+    "Dimensions": [71,2],
     "Body": [
      "","en-US",
      "DateAndTime","Date and time",
@@ -59,6 +59,28 @@ Children:
      "RecipesEditorNotSet","is not set",
      "RecipesEditorStore","Store",
      "RecipesEditorNotFound","not found",
-     "RecipesEditorEditModelOfSchema","EditModel of schema"
+     "RecipesEditorEditModelOfSchema","EditModel of schema",
+     "Loading","Loading",
+     "Old password","Old password",
+     "LoginFormPasswordExpired","Password expired",
+     "Login","Login",
+     "New password","New password",
+     "Password","Password",
+     "Confirm password","Confirm password",
+     "Change password","Change password",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.",
+     "Current User:","Current User:",
+     "Logout","Logout",
+     "ChangePasswordFormSuccessMessage","Password changed successfully",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short",
+     "ChangePasswordFormUserNotFoundMessage","User not found",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match",
+     "LoginFormLoginSuccessful","Login successful",
+     "LoginFormAuthenticationFailed","Authentication failed",
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user"
     ]
    }
